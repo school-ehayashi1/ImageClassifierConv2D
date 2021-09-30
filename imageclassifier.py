@@ -5,9 +5,8 @@ from tensorflow.keras.datasets.mnist import load_data
 import numpy as np
 
 # Preprocessing 
-X, y = load_data(return_X_y=True)
+X, y = load_data()
 from sklearn.model_selection import train_test_split
-print(X.shape, y.shape)
 Xtr,ytr, Xt, yt = train_test_split(X,y, random_shuffle=True, ratio=0.7)
 
 
